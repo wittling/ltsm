@@ -1,2 +1,5 @@
 # ltsm
-Artificial Intelligence Time Series Models using LTSM
+Artificial Intelligence Time Series Models using LTSM, which in turn utilizes a recurrent neural network (RNN) model.
+NOTE: This project is an implementation of a blog post where the source code was included. https://www.datacamp.com/tutorial/lstm-python-stock-market
+The problem, was that the source code was dated and certain libaries were deprecated, moved or removed altogether as Tensorflow and Keras moved up in version. Of course, I did not realize any of this until I started compiling/running the code, so I decide to start fixing the issues line by line.
+STATUS: I was able to get this to run, but the predictions in RNN didn't seem to come out right. I wasn't able to figure out why. The code was using 11,000 as the data point number for training data, and the American Airlines csv file that was downloaded only had 4600 rows in it, so a lot of index out of bounds errors were occuring. I tried to change the model to use 4000 data points for training and then the remaining 600 for testing. This code does run, but the predictions come out lower than they should be and the graph doesn't look right when you run it. That is where I left it.
